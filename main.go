@@ -89,7 +89,7 @@ func getRegexFromPrompt(prompt string, explain bool) (string, error) {
 			"Answer with the regex pattern as the first line, then briefly explain the generated regex"+
 			"If the request is irrelevant, answer 'Invalid request'\n\n"+
 			"Request:\n%s", prompt)
-		maxTokens = 200
+		maxTokens = 250
 	} else {
 		prompt = fmt.Sprintf("You are a regex generator CLI.\n"+
 			"Generate a regex pattern for the request being provided.\n"+
