@@ -63,7 +63,7 @@ OPTIONS:
 				return cli.Exit(fmt.Sprintf("Error: %v", err), 1)
 			}
 
-			fmt.Println(regex)
+			fmt.Printf("\n%s\n\n", regex)
 			return nil
 		},
 	}
